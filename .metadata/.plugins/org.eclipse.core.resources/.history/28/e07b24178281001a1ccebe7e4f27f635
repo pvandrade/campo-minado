@@ -65,15 +65,7 @@ public class Casa {
 		return vizinhanca.stream().noneMatch(v -> v.minada);
 	}
 	
-	void minar() {
-		minada = true;
-	}
-	
 	public boolean isMarcada() {
 		return marcada;
-	}
-	
-	public boolean isAberta() {
-		return aberta;
 	}
 }

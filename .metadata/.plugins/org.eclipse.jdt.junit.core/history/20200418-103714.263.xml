@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CasaTest" project="campo-minado" tests="13" started="13" failures="0" errors="1" ignored="0">
+  <testsuite name="br.com.cod3r.cm.model.CasaTest" time="0.174" displayname="CasaTest" uniqueid="[engine:junit-jupiter]/[class:br.com.cod3r.cm.model.CasaTest]">
+    <testcase name="abrirNaoMinadaNaoMarcadaTest" classname="br.com.cod3r.cm.model.CasaTest" time="0.055" displayname="abrirNaoMinadaNaoMarcadaTest()" uniqueid="[engine:junit-jupiter]/[class:br.com.cod3r.cm.model.CasaTest]/[method:abrirNaoMinadaNaoMarcadaTest()]"/>
+    <testcase name="testeVizinhoDistanciaBaixo" classname="br.com.cod3r.cm.model.CasaTest" time="0.003" displayname="testeVizinhoDistanciaBaixo()" uniqueid="[engine:junit-jupiter]/[class:br.com.cod3r.cm.model.CasaTest]/[method:testeVizinhoDistanciaBaixo()]"/>
+    <testcase name="testeVizinhoDistanciaDireita" classname="br.com.cod3r.cm.model.CasaTest" time="0.003" displayname="testeVizinhoDistanciaDireita()" uniqueid="[engine:junit-jupiter]/[class:br.com.cod3r.cm.model.CasaTest]/[method:testeVizinhoDistanciaDireita()]"/>
+    <testcase name="testeVizinhoDistanciaCima" classname="br.com.cod3r.cm.model.CasaTest" time="0.004" displayname="testeVizinhoDistanciaCima()" uniqueid="[engine:junit-jupiter]/[class:br.com.cod3r.cm.model.CasaTest]/[method:testeVizinhoDistanciaCima()]"/>
+    <testcase name="testeVizinhoDistanciaEsquerda" classname="br.com.cod3r.cm.model.CasaTest" time="0.002" displayname="testeVizinhoDistanciaEsquerda()" uniqueid="[engine:junit-jupiter]/[class:br.com.cod3r.cm.model.CasaTest]/[method:testeVizinhoDistanciaEsquerda()]"/>
+    <testcase name="abrirMinadaMarcadaTest" classname="br.com.cod3r.cm.model.CasaTest" time="0.004" displayname="abrirMinadaMarcadaTest()" uniqueid="[engine:junit-jupiter]/[class:br.com.cod3r.cm.model.CasaTest]/[method:abrirMinadaMarcadaTest()]"/>
+    <testcase name="valorPadraoAtributoMarcadaTest" classname="br.com.cod3r.cm.model.CasaTest" time="0.002" displayname="valorPadraoAtributoMarcadaTest()" uniqueid="[engine:junit-jupiter]/[class:br.com.cod3r.cm.model.CasaTest]/[method:valorPadraoAtributoMarcadaTest()]"/>
+    <testcase name="testeNaoVizinho" classname="br.com.cod3r.cm.model.CasaTest" time="0.002" displayname="testeNaoVizinho()" uniqueid="[engine:junit-jupiter]/[class:br.com.cod3r.cm.model.CasaTest]/[method:testeNaoVizinho()]"/>
+    <testcase name="addMarcacaoTest1" classname="br.com.cod3r.cm.model.CasaTest" time="0.003" displayname="addMarcacaoTest1()" uniqueid="[engine:junit-jupiter]/[class:br.com.cod3r.cm.model.CasaTest]/[method:addMarcacaoTest1()]"/>
+    <testcase name="addMarcacaoTest2" classname="br.com.cod3r.cm.model.CasaTest" time="0.003" displayname="addMarcacaoTest2()" uniqueid="[engine:junit-jupiter]/[class:br.com.cod3r.cm.model.CasaTest]/[method:addMarcacaoTest2()]"/>
+    <testcase name="testeVizinhoDistanciaDiagonal" classname="br.com.cod3r.cm.model.CasaTest" time="0.003" displayname="testeVizinhoDistanciaDiagonal()" uniqueid="[engine:junit-jupiter]/[class:br.com.cod3r.cm.model.CasaTest]/[method:testeVizinhoDistanciaDiagonal()]"/>
+    <testcase name="abrirMinadaNaoMarcadaTest" classname="br.com.cod3r.cm.model.CasaTest" time="0.07" displayname="abrirMinadaNaoMarcadaTest()" uniqueid="[engine:junit-jupiter]/[class:br.com.cod3r.cm.model.CasaTest]/[method:abrirMinadaNaoMarcadaTest()]">
+      <error>br.com.cod3r.cm.exception.ExplosionException
+	at br.com.cod3r.cm.model.Casa.abrir(Casa.java:53)
+	at br.com.cod3r.cm.model.CasaTest.abrirMinadaNaoMarcadaTest(CasaTest.java:98)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:124)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:74)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:202)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:198)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:89)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
+</error>
+    </testcase>
+    <testcase name="abrirNaoMinadaMarcadaTest" classname="br.com.cod3r.cm.model.CasaTest" time="0.001" displayname="abrirNaoMinadaMarcadaTest()" uniqueid="[engine:junit-jupiter]/[class:br.com.cod3r.cm.model.CasaTest]/[method:abrirNaoMinadaMarcadaTest()]"/>
+  </testsuite>
+</testrun>

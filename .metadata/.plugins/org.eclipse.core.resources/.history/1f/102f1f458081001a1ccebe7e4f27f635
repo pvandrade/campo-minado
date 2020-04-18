@@ -3,8 +3,6 @@ package br.com.cod3r.cm.model;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.cod3r.cm.exception.ExplosionException;
-
 public class Casa {
 	private final int linha;
 	private final int coluna;
@@ -13,7 +11,7 @@ public class Casa {
 	private boolean minada;
 	private boolean marcada;
 	
-	private List<Casa> vizinhanca = new ArrayList<>();
+	private List<Casa> vizinhança = new ArrayList<>();
 	
 	Casa(int linha, int coluna) {
 		this.linha = linha;
@@ -30,50 +28,13 @@ public class Casa {
 		int deltaGeral = deltaColuna + deltaLinha;
 		
 		if (deltaGeral == 1 && !diagonal) {
-			vizinhanca.add(vizinho);
+			vizinhança.add(vizinho);
 			return true;
 		} else if (deltaGeral == 2 && diagonal) {
-			vizinhanca.add(vizinho);
+			vizinhança.add(vizinho);
 			return true;
 		} else {
 			return false;
 		}
-	}
-	
-	void addMarcacao() {
-		if (!aberta) {
-			marcada = !marcada;
-		}
-	}
-	
-	boolean abrir() {
-		if (!aberta && !marcada) {
-			aberta = true;
-			if (minada) {
-				throw new ExplosionException();
-			}
-			if (vizinhancaSegura()) {
-				vizinhanca.forEach(v -> v.abrir());
-			}
-			return true;
-		} else {
-			return false;			
-		}
-	}	
-	
-	boolean vizinhancaSegura() {
-		return vizinhanca.stream().noneMatch(v -> v.minada);
-	}
-	
-	void minar() {
-		minada = true;
-	}
-	
-	public boolean isMarcada() {
-		return marcada;
-	}
-	
-	public boolean isAberta() {
-		return aberta;
 	}
 }

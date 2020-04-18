@@ -72,8 +72,4 @@ public class Casa {
 	public boolean isMarcada() {
 		return marcada;
 	}
-	
-	public boolean isAberta() {
-		return aberta;
-	}
 }
