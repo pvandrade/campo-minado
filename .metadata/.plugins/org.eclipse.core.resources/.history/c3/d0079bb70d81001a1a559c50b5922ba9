@@ -1,0 +1,30 @@
+package br.com.cod3r.cm.model;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+public class CasaTest {
+	
+	private Casa casa;
+	
+	@BeforeEach
+	void iniciarCasa() {
+		casa = new Casa(3,3);
+	}
+	
+	@Test
+	void testeVizinhoRealDistancia1Esquerda() {
+		Casa vizinho = new Casa(3,2);
+		boolean resultado = casa.addVizinho(vizinho);
+		assertTrue(resultado);
+	}
+	
+	@Test
+	void testeVizinhoRealDistancia1Direita() {
+		Casa vizinho = new Casa(3,4);
+		boolean resultado = casa.addVizinho(vizinho);
+		assertTrue(resultado);
+	}
+}

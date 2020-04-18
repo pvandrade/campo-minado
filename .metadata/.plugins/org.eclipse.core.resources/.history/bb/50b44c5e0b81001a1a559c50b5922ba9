@@ -1,0 +1,17 @@
+package br.com.cod3r.cm.model;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.Test;
+
+public class CasaTest {
+	
+	private Casa casa = new Casa(3,3);
+	
+	@Test
+	void testeVizinhoRealDistancia1() {
+		Casa vizinho = new Casa(3,2);
+		boolean resultado = casa.addVizinho(vizinho);
+		assertTrue(resultado);
+	}
+}

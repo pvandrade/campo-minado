@@ -1,0 +1,15 @@
+package exception.personalizedB;
+
+@SuppressWarnings("serial")
+public class EmptyStringException extends Exception {
+
+    private String AtributeName;
+    
+    public EmptyStringException(String AtributeName) {
+        this.AtributeName = AtributeName;
+    }
+    
+    public String getMessage() {
+        return String.format("the atribute '%s' is empty", AtributeName);
+    }
+}

@@ -1,0 +1,30 @@
+package exception;
+
+public class CauseException {
+    
+    public static void main(String[] args) {
+        try {
+            aMethod(null);
+        } catch (IllegalArgumentException e) {
+            if (e.getCause() != null) {
+                System.out.println(e.getCause().getMesage());
+            }
+        }
+        aMethod(null);
+    }
+    
+    static void aMethod (Student student) {
+        try {
+            bMethod(student);
+        } catch (Exception cause) {
+            throw new IllegalArgumentException(cause);
+        }
+    }
+    
+    static void bMethod (Student student) {
+        if (student == null) {
+            throw new NullPointException("Null student");
+        }
+        System.out.println(student.name);
+    }
+}

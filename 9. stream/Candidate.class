@@ -1,0 +1,16 @@
+package streams;
+
+public class Candidate {
+    
+    final String name;
+    final int englishLevel;
+    final double hardSkills;
+    final double softSkills;
+    
+    public Candidate (String name, int englishLevel, double hardSkills, double softSkills) {
+        this.name = name;
+        this.englishLevel = englishLevel;
+        this.hardSkills = hardSkills;
+        this.softSkills = softSkills;
+    }
+}
