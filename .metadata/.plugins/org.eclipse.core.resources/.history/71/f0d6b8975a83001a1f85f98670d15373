@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
-import br.com.cod3r.cm.exception.ExplosionException;
-
 public class Tabuleiro {
 	
 	private int linhas;
@@ -25,15 +23,10 @@ public class Tabuleiro {
 	}
 
 	public void abrir(int linha, int coluna) {
-		try {
-			casas.parallelStream()
-				.filter(c -> c.getLinha() == linha && c.getColuna() == coluna)
-				.findFirst()
-				.ifPresent(c -> c.abrir());
-		} catch (ExplosionException e) {
-			casas.forEach(c -> c.setAberta(true));
-			throw e;
-		}
+		casas.parallelStream()
+			.filter(c -> c.getLinha() == linha && c.getColuna() == coluna)
+			.findFirst()
+			.ifPresent(c -> c.abrir());
 	}
 	
 	public void marcar(int linha, int coluna) {

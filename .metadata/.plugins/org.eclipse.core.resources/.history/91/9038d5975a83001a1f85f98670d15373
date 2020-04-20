@@ -77,10 +77,6 @@ public class Casa {
 		return marcada;
 	}
 	
-	void setAberta(boolean aberta) {
-		this.aberta = aberta;
-	}
-	
 	public boolean isAberta() {
 		return aberta;
 	}
