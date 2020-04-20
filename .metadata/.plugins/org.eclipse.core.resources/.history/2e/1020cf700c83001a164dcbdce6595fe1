@@ -1,0 +1,45 @@
+package br.com.cod3r.cm.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Tabuleiro {
+	
+	private int linhas;
+	private int colunas;
+	private int minas;
+	
+	private final List<Casa> casas = new ArrayList<>();
+
+	public Tabuleiro(int linhas, int colunas, int minas) {
+		this.linhas = linhas;
+		this.colunas = colunas;
+		this.minas = minas;
+		
+		gerarCasas();
+		associarVizinhos();
+		sortearMinas();
+	}
+
+	private void gerarCasas() {
+		for (int linha = 0; linha < linhas; linha++) {
+			for (int coluna = 0; coluna < colunas; coluna++) {
+				casas.add(new Casa(linha, coluna));
+			}
+		}
+	}
+	
+	private void associarVizinhos() {
+		for(Casa c1: casas) {
+			for (Casa c2: casas) {
+				c1.addVizinho(c2);
+			}
+		}
+	}
+	
+	private void sortearMinas() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

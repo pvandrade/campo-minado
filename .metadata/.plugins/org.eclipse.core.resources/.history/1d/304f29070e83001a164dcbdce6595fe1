@@ -33,7 +33,7 @@ public class Tabuleiro {
 		casas.parallelStream()
 			.filter(c -> c.getLinha() == linha && c.getColuna() == coluna)
 			.findFirst()
-			.ifPresent(c -> c.addMarcacao());
+			.ifPresent(c -> c.addMarcacao(););
 	}
 	
 	private void gerarCasas() {

@@ -69,10 +69,6 @@ public class Casa {
 		minada = true;
 	}
 	
-	public boolean isMinada() {
-		return minada;
-	}
-	
 	public boolean isMarcada() {
 		return marcada;
 	}

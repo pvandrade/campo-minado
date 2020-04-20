@@ -1,0 +1,15 @@
+package br.com.cod3r.cm.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Tabuleiro {
+	
+	private int linhas;
+	private int colunas;
+	private int minas;
+	
+	private final List<Casa> casas = new ArrayList<>();
+	
+	
+}

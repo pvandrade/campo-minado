@@ -69,53 +69,11 @@ public class Casa {
 		minada = true;
 	}
 	
-	public boolean isMinada() {
-		return minada;
-	}
-	
 	public boolean isMarcada() {
 		return marcada;
 	}
 	
 	public boolean isAberta() {
 		return aberta;
-	}
-
-	public int getLinha() {
-		return linha;
-	}
-
-	public int getColuna() {
-		return coluna;
-	}
-	
-	boolean objetivoAlcancado() {
-		boolean desvendada = !minada && aberta;
-		boolean protegida = minada && marcada;
-		return desvendada || protegida;
-	}
-	
-	long minasVizinhanca() {
-		return vizinhanca.stream().filter(v -> v.minada).count();
-	}
-	
-	void reiniciar() {
-		aberta = false;
-		minada = false;
-		marcada = false;
-	}
-	
-	public String toString() {
-		if (marcada) {
-			return "x";
-		} else if (aberta && minada) {
-			return "*";
-		} else if (aberta && minasVizinhanca() > 0) {
-			return Long.toString(minasVizinhanca());
-		} else if (aberta) {
-			return " ";
-		} else {
-			return "?";
-		}
 	}
 }
