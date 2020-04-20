@@ -43,6 +43,7 @@ public class TabuleiroConsole {
 
 	private void loopJogo() {
 		try {
+			
 			while (!tabuleiro.objetivoAlcancado()) {
 				System.out.println(tabuleiro);
 				
@@ -59,9 +60,8 @@ public class TabuleiroConsole {
 					tabuleiro.marcar(xy.next(), xy.next());
 				}
 			}
-			System.out.println(tabuleiro);
-			System.out.println("Venceu!");
 			
+			System.out.println("Venceu!");
 		} catch (ExplosionException e) {
 			System.out.println(tabuleiro);
 			System.out.println("Perdeu.");
